@@ -1,0 +1,138 @@
+/*PALETTA DE COLORES*/
+:root {
+    --color-01: #A60505;
+    --color-02: #d40101;
+    --color-03: #0c1446;
+    --color-04:#192d96;
+    --color-05: #144d4d;
+    --color-06: #125959;
+    --color-fondo: #E7E1E1;
+    --color-blanco: #fff;
+    --color-negro: #000;
+}
+
+.movieCarousel{
+    height: 250px;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    filter: brightness(0.6);
+}
+
+.container-img {
+    position: relative;
+}
+
+.text-carrusel {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 90%;
+    color: var(--color-blanco);
+}
+
+.text-carrusel .titulo-carrusel {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn-p-slider-1 {
+    background-color: var(--color-01);
+    color: var(--color-blanco);
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+.btn-p-slider-1:hover {
+    background-color: var(--color-02);
+    color: var(--color-blanco);
+}
+
+.btn-p-slider-2 {
+    background-color: var(--color-03);
+    color: var(--color-blanco);
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+.btn-p-slider-2:hover {
+    background-color: var(--color-04);
+    color: var(--color-blanco);
+}
+
+.btn-p-slider-3 {
+    background-color: var(--color-05);
+    color: var(--color-blanco);
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+.btn-p-slider-3:hover {
+    background-color: var(--color-06);
+    color: var(--color-blanco);
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .movieCarousel{
+        height: 450px;
+    }
+
+    .text-carrusel {
+        width: 80%;
+    }
+
+    .text-carrusel .titulo-carrusel {
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .btn-p-slider-1 {
+        font-size: 1rem;
+    }
+
+    .btn-p-slider-2 {
+        font-size: 1rem;
+    }
+
+    .btn-p-slider-3 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .movieCarousel{
+        height: 600px;
+    }
+
+    .text-carrusel {
+        width: 70%;
+    }
+
+    .text-carrusel .titulo-carrusel {
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .btn-p-slider-1 {
+        font-size: 1.5rem;
+    }
+
+    .btn-p-slider-2 {
+        font-size: 1.5rem;
+    }
+
+    .btn-p-slider-3 {
+        font-size: 1.5rem;
+    }
+}

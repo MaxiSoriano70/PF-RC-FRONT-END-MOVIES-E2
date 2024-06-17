@@ -1,0 +1,40 @@
+/*PALETTA DE COLORES*/
+:root {
+    --color-principal:#591212;
+    --color-secundario:#BF2424;
+    --color-terciario:#174873;
+    --color-cuarto:#295FA6;
+    --color-opuesto:#125959;
+    --color-fondo: #E7E1E1;
+    --color-blanco: #fff;
+    --color-negro: #000;
+}
+
+.bg-color-principal {
+    background-color: var(--color-principal);
+}
+
+.btn-personalized-1 {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+}
+
+.btn-personalized-1:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+}
+
+.btn-personalized-2 {
+    background-color: var(--color-opuesto);
+    color: var(--color-blanco);
+}
+
+.btn-personalized-2:hover {
+    background-color: var(--color-terciario);
+    color: var(--color-blanco);
+}
+
+.img-administracion{
+    width: 75px;
+    height: 100px;
+}

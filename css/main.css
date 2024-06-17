@@ -1,0 +1,33 @@
+/*PALETTA DE COLORES*/
+:root {
+    --color-01: #A60505;
+    --color-02: #d40101;
+    --color-03: #0c1446;
+    --color-04:#192d96;
+    --color-05: #144d4d;
+    --color-06: #125959;
+    --color-fondo: #E7E1E1;
+    --color-blanco: #fff;
+    --color-negro: #000;
+}
+
+/*MAIN*/
+.bg-main {
+    background-color: var(--color-fondo);
+}
+
+.container-main {
+    padding-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .container-main {
+        padding-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    .container-main {
+        padding-bottom: 3rem;
+    }
+}

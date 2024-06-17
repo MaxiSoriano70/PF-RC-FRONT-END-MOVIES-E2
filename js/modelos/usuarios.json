@@ -1,0 +1,20 @@
+[
+    {
+        "email": "celeste@gmail.com",
+        "nombre": "Celeste",
+        "apellido": "Severich",
+        "telefono": "3875789632",
+        "fechaDeNacimiento": "1998-04-17",
+        "contasenia": "Celeste123",
+        "admin": true
+    },
+    {
+        "email": "karen@gmail.com",
+        "nombre": "Karen",
+        "apellido": "Garcia",
+        "telefono": "3875123654",
+        "fechaDeNacimiento": "1998-02-17",
+        "contasenia": "Karen123",
+        "admin": false
+    }
+]

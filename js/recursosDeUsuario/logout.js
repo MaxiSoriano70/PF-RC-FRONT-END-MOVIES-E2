@@ -9,7 +9,7 @@ document.querySelector("#btnCerrarSesion").addEventListener('click', function() 
         confirmButtonBorderColor: "#144d4d",
         cancelButtonColor: "#dc3545",
         textColor: "#000",
-        background: "#E7E1E1",
+        background: "#eaf4ff",
         confirmButtonText: "Sí, salir",
         cancelButtonText: "Cancelar",
     }).then((result) => {
@@ -20,7 +20,7 @@ document.querySelector("#btnCerrarSesion").addEventListener('click', function() 
                 text: `${usuario.nombre} ${usuario.apellido}`,
                 showConfirmButton: false,
                 textColor: "#000",
-                background: "#E7E1E1",
+                background: "#eaf4ff",
                 timer: 1500
             });
             setTimeout(() => {

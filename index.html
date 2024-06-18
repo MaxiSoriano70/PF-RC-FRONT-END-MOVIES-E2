@@ -47,7 +47,7 @@
                                 <i class="fa-solid fa-user"></i> <span id="nombre-usuario"></span>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark bg-color-secundario mb-2">
-                                <li><a class="dropdown-item text-light fw-bold" href="#"><i class="fa-solid fa-user-pen"></i> Editar perfil</a></li>
+                                <li><a class="dropdown-item text-light fw-bold" href="#" data-bs-toggle="modal" data-bs-target="#editarPerfilModal"><i class="fa-solid fa-user-pen"></i> Editar perfil</a></li>
                                 <li><a class="dropdown-item text-light fw-bold" id="btnAdministracion" href="pages/administracion.html"><i class="fa-solid fa-user-tie"></i> Administrar</a></li>
                                 <li><hr class="dropdown-divider bg-light"></li>
                                 <li><a class="dropdown-item text-light fw-bold" id="btnCerrarSesion" href="#"><i class="fa-solid fa-door-open"></i> Salir</a></li>
@@ -68,7 +68,6 @@
                 </div>
             </div>
         </nav>
-
     </header>
     <main class="flex-grow-1 bg-main container-main flex-grow-1">
         <!-- Carousel Movies -->
@@ -222,6 +221,59 @@
                 </div>
             </div>
         </section>
+
+        <!-- Modal Editar Perfil-->
+        <section class="modal fade" id="editarPerfilModal" tabindex="-1" aria-labelledby="editarPerfilModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header bg-color-principal">
+                        <h5 class="modal-title text-white" id="editarPerfilModal">Editar Perfil</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body bg-color-fondo">
+                        <form id="form-registro">
+                            <div class="mb-3">
+                                <label for="emailRegistro" class="form-label fw-bolder">Email</label>
+                                <input type="email" class="form-control bg-input" id="emailRegistro" aria-describedby="emailHelp" placeholder="Ingrese su email"
+                                minlength="8" maxlength="20" name="Email" autocomplete="username" required>
+                                <div id="emailErrorRegistro">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="nombreRegistro" class="form-label fw-bolder">Nombre</label>
+                                <input type="text" class="form-control bg-input" id="nombreRegistro" placeholder="Ingrese su nombre"
+                                minlength="3" maxlength="25" name="Nombre" required>
+                                <div id="nombreErrorRegistro">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="apellidoRegistro" class="form-label fw-bolder">Apellido</label>
+                                <input type="text" class="form-control bg-input" id="apellidoRegistro" placeholder="Ingrese su apellido"
+                                minlength="3" maxlength="25" name="Apellido" required>
+                                <div id="apellidoErrorRegistro">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefonoRegistro" class="form-label fw-bolder">Teléfono</label>
+                                <input type="tel" class="form-control bg-input" id="telefonoRegistro" placeholder="Ingresa tu teléfono" maxlength="10" pattern="\d{10}" name="Teléfono" required>
+                                <div id="telefonoErrorRegistro">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="fechaNacimientoRegistro" class="form-label fw-bolder">Fecha de Nacimiento</label>
+                                <input type="date" class="form-control bg-input" id="fechaNacimientoRegistro" placeholder="Ingrese su Fecha de Nacimiento" min="1900-01-01" name="Fecha de nacimiento" required>
+                                <div id="fechaNacimientoErrorRegistro">
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <button type="submit" id="botonGuardarCambiosUsuario" class="btn btn-personalized-3 mx-1 fw-bold" aria-label="Guardar cambios">Guardar cambios</button>
+                                <button type="button" id="cerrarEditarUsuario" class="btn btn-personalized-1 mx-1 fw-bold" data-bs-dismiss="modal" aria-label="Close">Cancelar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- Footer-->
     <footer class="bg-color-principal text-white pt-3 pb-3">
@@ -271,9 +323,9 @@
     <!-- Script -->
     <script src="./js/modelos/Usuario.js"></script>
     <script src="./js/utils.js"></script>
-    <script src="./js/login.js"></script>
-    <script src="./js/register.js"></script>
-    <script src="./js/logout.js"></script>
+    <script src="./js/recursosDeUsuario/login.js"></script>
+    <script src="./js/recursosDeUsuario/register.js"></script>
+    <script src="./js/recursosDeUsuario/logout.js"></script>
     <script src="./js/index.js"></script>
 </body>
 </html>

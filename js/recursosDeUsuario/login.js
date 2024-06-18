@@ -28,7 +28,7 @@ window.addEventListener('load', function(){
                     text: `${usuarioEncontrado.nombre} ${usuarioEncontrado.apellido}`,
                     showConfirmButton: false,
                     textColor: "#000",
-                    background: "#E7E1E1",
+                    background: "#eaf4ff",
                     timer: 1500
                 });
                 setTimeout(() => {
@@ -42,7 +42,7 @@ window.addEventListener('load', function(){
                     confirmButtonColor: "#125959",
                     confirmButtonBorderColor: "#144d4d",
                     textColor: "#000",
-                    background: "#E7E1E1",
+                    background: "#eaf4ff",
                 });
             }
         formIniciarSesion.reset();

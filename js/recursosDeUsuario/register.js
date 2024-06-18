@@ -64,7 +64,7 @@ const registrarUsuario = (payload) =>{
             text: `${usuario.nombre} ${usuario.apellido}`,
             showConfirmButton: false,
             textColor: "#000",
-            background: "#E7E1E1",
+            background: "#eaf4ff",
             timer: 1500
         });
         setTimeout(() => {
@@ -77,7 +77,7 @@ const registrarUsuario = (payload) =>{
             text: "Error en el registro",
             showConfirmButton: false,
             textColor: "#000",
-            background: "#E7E1E1",
+            background: "#eaf4ff",
             timer: 1500
         });
         setTimeout(() => {

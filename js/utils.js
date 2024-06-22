@@ -112,3 +112,59 @@ const validarContraseniasIguales = (e, password) =>{
         return true;
     }
 }
+
+const validarTituloDePelicula = (e) => {
+    const campo = e.target;
+    const campoValue = campo.value.trim();
+    const regex = /^[A-Za-zÀ-ÖØ-öø-ÿ0-9\s\-']*$/;
+    if (!regex.test(campoValue) || campoValue.length < 3) {
+        setErrors(`${campo.name} invalida.`, campo, true);
+    } else {
+        setErrors(`${campo.name} válido.`, campo, false);
+    }
+};
+
+const validarUrLImgPelicula = (e) => {
+    const campo = e.target;
+    const campoValue = campo.value.trim();
+    const urlRegex = new RegExp('^(ftp|http|https):\/\/[^ "]+$');
+
+    if (!urlRegex.test(campoValue)) {
+        setErrors(`${campo.name} invalida.`, campo, true);
+    } else {
+        setErrors(`${campo.name} válida.`, campo, false);
+    }
+};
+
+const validarDuracion = (e) => {
+    const campo = e.target;
+    const campoValue = parseInt(campo.value.trim());
+
+    if (campoValue <= 1 || isNaN(campoValue)) {
+        setErrors(`${campo.name} invalida.`, campo, true);
+    } else {
+        setErrors(`${campo.name} válida.`, campo, false);
+    }
+};
+
+const validarAnioDeEstreno = (e) => {
+    const campo = e.target;
+    const campoValue = parseInt(campo.value.trim());
+
+    if (campoValue < 1900 || isNaN(campoValue)) {
+        setErrors(`${campo.name} invalida.`, campo, true);
+    } else {
+        setErrors(`${campo.name} válido.`, campo, false);
+    }
+};
+
+const validarSinopsisDePelicula = (e) => {
+    const campo = e.target;
+    const campoValue = campo.value.trim();
+    const regex = /^[A-Za-zÀ-ÖØ-öø-ÿ0-9\s\-']*$/;
+    if (!regex.test(campoValue) || campoValue.length < 3) {
+        setErrors(`Sinopsis invalida`, campo, true);
+    } else {
+        setErrors(`Sinopsis válido.`, campo, false);
+    }
+};

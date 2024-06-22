@@ -1,310 +1,396 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Peliculas" />
     <meta name="author" content="Maximiliano Soriano" />
     <meta name="keywords" content="Peliculas, Movies, Series" />
     <!-- Font Awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <!-- DATA TABLES-->
     <script defer src="https://code.jquery.com/jquery-3.7.0.js"></script>
-    <script defer src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
-    <script defer src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css">
+    <script
+      defer
+      src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css"
+    />
     <script defer src="../js/script.js"></script>
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/nav.css">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/bootstrap-personalizado.css">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/bootstrap-personalizado.css" />
     <title>Movies Fire</title>
-</head>
-<body class="d-flex flex-column min-vh-100">
+  </head>
+  <body class="d-flex flex-column min-vh-100">
     <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-color-principal p-md-2 p-lg-3">
-            <div class="container-fluid">
-                <a class="navbar-brand fw-bold" href="../index.html"><i class="fa-solid fa-fire-flame-curved"></i> Movie Fire</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBarMovies"
-                    aria-controls="navBarMovies" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navBarMovies">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold">
-                        <li class="nav-item mx-2">
-                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item mx-2">
-                            <a class="nav-link" href="#">Contacto</a>
-                        </li>
-                        <li class="nav-item mx-2">
-                            <a class="nav-link" href="#">Acerca de Nosotros</a>
-                        </li>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-color-principal p-md-2 p-lg-3"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" href="../index.html"
+            ><i class="fa-solid fa-fire-flame-curved"></i> Movie Fire</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navBarMovies"
+            aria-controls="navBarMovies"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navBarMovies">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold">
+              <li class="nav-item mx-2">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">Acerca de Nosotros</a>
+              </li>
 
-                        <li class="nav-item dropdown mx-2 active" id="opciones-usuario">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-solid fa-user"></i> <span id="nombre-usuario"></span>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-dark bg-color-secundario mb-2">
-                                <li><a class="dropdown-item text-light fw-bold" href="#"><i class="fa-solid fa-user-pen"></i> Editar perfil</a></li>
-                                <li><a class="dropdown-item text-light fw-bold" id="btnAdministracion" href="administracion.html"><i class="fa-solid fa-user-tie"></i> Administrar</a></li>
-                                <li><hr class="dropdown-divider bg-light"></li>
-                                <li><a class="dropdown-item text-light fw-bold" id="btnCerrarSesion" href="#"><i class="fa-solid fa-door-open"></i> Salir</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
+              <li class="nav-item dropdown mx-2 active" id="opciones-usuario">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa-solid fa-user"></i>
+                  <span id="nombre-usuario"></span>
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-dark bg-color-secundario mb-2"
+                >
+                  <li>
+                    <a class="dropdown-item text-light fw-bold" href="#"
+                      ><i class="fa-solid fa-user-pen"></i> Editar perfil</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-light fw-bold"
+                      id="btnAdministracion"
+                      href="administracion.html"
+                      ><i class="fa-solid fa-user-tie"></i> Administrar</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider bg-light" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item text-light fw-bold"
+                      id="btnCerrarSesion"
+                      href="#"
+                      ><i class="fa-solid fa-door-open"></i> Salir</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <main class="flex-grow-1 bg-main container-main flex-grow-1">
-        <section class="d-flex align-items-center justify-content-center my-5">
-            <button class="btn btn-success fw-bold" data-bs-toggle="modal" data-bs-target="#agregarPeliculaModal">Agregar Pelicula</button>
-            <!-- Modal Agregar Pelicula-->
-            <section class="modal fade" id="agregarPeliculaModal" tabindex="-1" aria-labelledby="agregarPeliculaModal" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header bg-color-principal">
-                            <h5 class="modal-title text-white" id="agregarPeliculaModal">Agregar Pelicula</h5>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body bg-color-fondo">
-                            <form id="form-agregar-pelicula">
-                                <div class="mb-3">
-                                    <label for="tituloPeliculaAgregar" class="form-label fw-bolder">Titulo</label>
-                                    <input type="text" class="form-control bg-input" id="tituloPeliculaAgregar" placeholder="Ingrese titulo"
-                                    minlength="3" maxlength="25" name="Titulo" required>
-                                    <div id="tituloPeliculaAgregarError">
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="codigopeliculaAgregar" class="form-label fw-bolder">Codigo</label>
-                                    <input type="number" class="form-control bg-input" id="codigopeliculaAgregar" placeholder="Ingrese codigo de la pelicula" min="100" name="Codigo" required>
-                                    <div id="codigopeliculaAgregarError">
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="categoriaPeliculaAgregar" class="form-label fw-bolder">Categoria</label>
-                                    <input type="text" class="form-control bg-input" id="categoriaPeliculaAgregar" placeholder="Ingrese la categoria"
-                                    minlength="3" maxlength="25" name="Categoria" required>
-                                    <div id="categoriaPeliculaAgregarError">
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label fw-bolder w-100">Tipo</label>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="tipoRadioOptions" id="pelicula" value="canino">
-                                        <label class="form-check-label" for="pelicula">Pelicula</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="tipoRadioOptions" id="serie" value="felino">
-                                        <label class="form-check-label" for="serie">Serie</label>
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="duracionPeliculaAgregar" class="form-label fw-bolder">Duración</label>
-                                    <input type="number" class="form-control bg-input" id="duracionPeliculaAgregar" placeholder="Ingrese la duración" min="0" name="Duración" required>
-                                    <div id="duracionPeliculaAgregarError">
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="anioPeliculaAgregar" class="form-label fw-bolder">Año</label>
-                                    <input type="number" class="form-control bg-input" id="anioPeliculaAgregar" placeholder="Ingrese el año" min="0" name="Año" required>
-                                    <div id="anioPeliculaAgregarError">
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <div class="form-floating">
-                                        <textarea class="form-control bg-input" placeholder="Ingrese la sinopsis" id="observaciones" style="height: 100px"></textarea>
-                                        <label for="observaciones">Sinopsis</label>
-                                    </div>
-                                    <div id="observacionesPeliculaEditarError">
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <button type="submit" class="btn btn-personalized-3 mx-1 fw-bold" aria-label="Registrarse">Agregar</button>
-                                    <button type="reset" class="btn btn-personalized-1 mx-1 fw-bold" aria-label="Cancelar">Cancelar</button>
-                                </div>
-                            </form>
-                        </div>
+      <section class="d-flex align-items-center justify-content-center my-5">
+        <button
+          class="btn btn-success fw-bold"
+          data-bs-toggle="modal"
+          data-bs-target="#agregarPeliculaModal"
+        >
+          Agregar Pelicula
+        </button>
+        <!-- Modal Agregar Pelicula-->
+        <section
+          class="modal fade"
+          id="agregarPeliculaModal"
+          tabindex="-1"
+          aria-labelledby="agregarPeliculaModal"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header bg-color-principal">
+                <h5 class="modal-title text-white" id="agregarPeliculaModal">
+                  Agregar Pelicula
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close btn-close-white"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body bg-color-fondo">
+                <form id="form-agregar-pelicula">
+                  <div class="mb-3">
+                    <label
+                      for="tituloPeliculaAgregar"
+                      class="form-label fw-bolder"
+                      >Titulo</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control bg-input"
+                      id="tituloPeliculaAgregar"
+                      placeholder="Ingrese titulo"
+                      minlength="3"
+                      maxlength="25"
+                      name="Titulo"
+                      required
+                    />
+                    <div id="tituloPeliculaAgregarError"></div>
+                  </div>
+                  <div class="mb-3">
+                    <label
+                      for="codigopeliculaAgregar"
+                      class="form-label fw-bolder"
+                      >Codigo</label
+                    >
+                    <input
+                      type="number"
+                      class="form-control bg-input"
+                      id="codigopeliculaAgregar"
+                      placeholder="Ingrese codigo de la pelicula"
+                      min="100"
+                      name="Codigo"
+                      required
+                    />
+                    <div id="codigopeliculaAgregarError"></div>
+                  </div>
+                  <div class="mb-3">
+                    <label
+                      for="categoriaPeliculaAgregar"
+                      class="form-label fw-bolder"
+                      >Categoria</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control bg-input"
+                      id="categoriaPeliculaAgregar"
+                      placeholder="Ingrese la categoria"
+                      minlength="3"
+                      maxlength="25"
+                      name="Categoria"
+                      required
+                    />
+                    <div id="categoriaPeliculaAgregarError"></div>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label fw-bolder w-100">Tipo</label>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="tipoRadioOptions"
+                        id="pelicula"
+                        value="canino"
+                      />
+                      <label class="form-check-label" for="pelicula"
+                        >Pelicula</label
+                      >
                     </div>
-                </div>
-            </section>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="tipoRadioOptions"
+                        id="serie"
+                        value="felino"
+                      />
+                      <label class="form-check-label" for="serie">Serie</label>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label
+                      for="duracionPeliculaAgregar"
+                      class="form-label fw-bolder"
+                      >Duración</label
+                    >
+                    <input
+                      type="number"
+                      class="form-control bg-input"
+                      id="duracionPeliculaAgregar"
+                      placeholder="Ingrese la duración"
+                      min="0"
+                      name="Duración"
+                      required
+                    />
+                    <div id="duracionPeliculaAgregarError"></div>
+                  </div>
+                  <div class="mb-3">
+                    <label
+                      for="anioPeliculaAgregar"
+                      class="form-label fw-bolder"
+                      >Año</label
+                    >
+                    <input
+                      type="number"
+                      class="form-control bg-input"
+                      id="anioPeliculaAgregar"
+                      placeholder="Ingrese el año"
+                      min="0"
+                      name="Año"
+                      required
+                    />
+                    <div id="anioPeliculaAgregarError"></div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="form-floating">
+                      <textarea
+                        class="form-control bg-input"
+                        placeholder="Ingrese la sinopsis"
+                        id="observaciones"
+                        style="height: 100px"
+                      ></textarea>
+                      <label for="observaciones">Sinopsis</label>
+                    </div>
+                    <div id="observacionesPeliculaEditarError"></div>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-center">
+                    <button
+                      type="submit"
+                      class="btn btn-personalized-3 mx-1 fw-bold"
+                      aria-label="Registrarse"
+                    >
+                      Agregar
+                    </button>
+                    <button
+                      type="reset"
+                      class="btn btn-personalized-1 mx-1 fw-bold"
+                      aria-label="Cancelar"
+                    >
+                      Cancelar
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
         </section>
+      </section>
 
-        <!-- Tabla Peliculas-->
-        <section class="container-fluid table-responsive my-2">
-            <table id="example" class="table table-striped" style="width:100%">
-                <thead>
-                    <tr>
-                        <th>Id</th>
-                        <th>Titulo</th>
-                        <th>Codigo</th>
-                        <th>Categoria</th>
-                        <th>Tipo</th>
-                        <th>Duración</th>
-                        <th>Año</th>
-                        <th>Acciones</th>
-                    </tr>
-                </thead>
-                <tbody id="cuerpo-tabla-peliculas">
-                    <tr>
-                        <td>1</td>
-                        <td>Fiesta de salchichas</td>
-                        <td>12345</td>
-                        <td>Humor</td>
-                        <td>Pelicula</td>
-                        <td>104 min</td>
-                        <td>2018</td>
-                        <td>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <!-- Boton Editar Pelicula-->
-                                <button type="button" class="btn btn-primary mx-1 fw-bold" data-bs-toggle="modal" data-bs-target="#editarPeliculaModal"><i class="fa-solid fa-pen-to-square"></i> Editar
-                                </button>
-                                <!-- Modal Editar Pelicula-->
-                                <section class="modal fade" id="editarPeliculaModal" tabindex="-1" aria-labelledby="editarPeliculaModal" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered">
-                                        <div class="modal-content">
-                                            <div class="modal-header bg-color-principal">
-                                                <h5 class="modal-title text-white" id="editarPeliculaModal">Editar Pelicula</h5>
-                                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body bg-color-fondo">
-                                                <form id="form-agregar-pelicula">
-                                                    <div class="mb-3">
-                                                        <label for="tituloPeliculaEditar" class="form-label fw-bolder">Titulo</label>
-                                                        <input type="text" class="form-control bg-input" id="tituloPeliculaEditar" placeholder="Ingrese titulo"
-                                                        minlength="3" maxlength="25" name="Titulo" required>
-                                                        <div id="tituloPeliculaEditarError">
-                                                        </div>
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label for="codigopeliculaEditar" class="form-label fw-bolder">Codigo</label>
-                                                        <input type="number" class="form-control bg-input" id="codigopeliculaEditar" placeholder="Ingrese codigo de la pelicula" min="100" name="Codigo" required>
-                                                        <div id="codigopeliculaEditarError">
-                                                        </div>
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label for="categoriaPeliculaEditar" class="form-label fw-bolder">Categoria</label>
-                                                        <input type="text" class="form-control bg-input" id="categoriaPeliculaEditar" placeholder="Ingrese la categoria"
-                                                        minlength="3" maxlength="25" name="Categoria" required>
-                                                        <div id="categoriaPeliculaEditarError">
-                                                        </div>
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label class="form-label fw-bolder w-100">Tipo</label>
-                                                        <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="radio" name="tipoRadioOptions" id="pelicula" value="canino">
-                                                            <label class="form-check-label" for="pelicula">Pelicula</label>
-                                                        </div>
-                                                        <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="radio" name="tipoRadioOptions" id="serie" value="felino">
-                                                            <label class="form-check-label" for="serie">Serie</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label for="duracionPeliculaEditar" class="form-label fw-bolder">Duración</label>
-                                                        <input type="number" class="form-control bg-input" id="duracionPeliculaEditar" placeholder="Ingrese la duración" min="0" name="Duración" required>
-                                                        <div id="duracionPeliculaEditarError">
-                                                        </div>
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label for="anioPeliculaEditar" class="form-label fw-bolder">Año</label>
-                                                        <input type="number" class="form-control bg-input" id="anioPeliculaEditar" placeholder="Ingrese el año" min="0" name="Año" required>
-                                                        <div id="anioPeliculaEditarError">
-                                                        </div>
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <div class="form-floating">
-                                                            <textarea class="form-control bg-input" placeholder="Ingrese la sinopsis" id="observaciones" style="height: 100px"></textarea>
-                                                            <label for="observaciones">Sinopsis</label>
-                                                        </div>
-                                                        <div id="observacionesPeliculaEditarError">
-                                                        </div>
-                                                    </div>
-                                                    <div class="d-flex align-items-center justify-content-center">
-                                                        <button type="submit" id="botonGuardarCambiosPelicula" class="btn btn-personalized-3 mx-1 fw-bold" aria-label="Guardar cambios">Guardar cambios</button>
-                                                        <button type="button" id="cerrarEditarPelicula" class="btn btn-personalized-1 mx-1 fw-bold" data-bs-dismiss="modal" aria-label="Close">Cancelar</button>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                                <!-- Boton Destacar Pelicula-->
-                                <button type="button" class="btn btn-warning fw-bold mx-1"><i class="fa-solid fa-star"></i> Destacar
-                                </button>
-                                <!-- Boton Eliminar Pelicula-->
-                                <button type="button" class="btn btn-danger fw-bold mx-1"><i class="fa-solid fa-trash"></i> Eliminar
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <th>Id</th>
-                        <th>Titulo</th>
-                        <th>Codigo</th>
-                        <th>Categoria</th>
-                        <th>Tipo</th>
-                        <th>Duración</th>
-                        <th>Año</th>
-                        <th>Acciones</th>
-                    </tr>
-                </tfoot>
-            </table>
-        </section>
+      <!-- Tabla Peliculas-->
+      <section class="container-fluid table-responsive my-2">
+        <table id="example" class="table table-striped" style="width: 100%">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Titulo</th>
+              <th>Categoria</th>
+              <th>Sinopsis</th>
+              <th>Serie/Pelicula</th>
+              <th>Duracion</th>
+              <th>Año</th>
+              <th>Accion</th>
+            </tr>
+          </thead>
+          <tbody id="TbodyAdmin"></tbody>
+          <tfoot>
+            <tr class="text-center">
+              <th>#</th>
+              <th>Titulo</th>
+              <th>Categoria</th>
+              <th>Sinopsis</th>
+              <th>Serie/Pelicula</th>
+              <th>Duracion</th>
+              <th>Año</th>
+              <th>Accion</th>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
     </main>
     <!-- Footer-->
     <footer class="bg-color-principal text-white pt-3 pb-3">
-        <section class="container text-center text-md-start">
-            <div class="row text-center text-md-start">
-                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 fw-bold text-white"><a class="btn-footer-logo" href="#"><i class="fa-solid fa-fire-flame-curved"></i> Movie Fire</a></h5>
-                    <p class="fw-bolder">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                </div>
-                <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 fw-bold text-white">Disfruta</h5>
-                    <p class="fw-bolder">Estrenos</p>
-                    <p class="fw-bolder">Series</p>
-                    <p class="fw-bolder">Peliculas</p>
-                </div>
-                <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 fw-bold text-white">Contactanos</h5>
-                    <p class="fw-bolder"><i class="fa-solid fa-location-dot"></i> Calle false 123</p>
-                    <p class="fw-bolder"><i class="fa-solid fa-envelope"></i> fire-movies@gmail.com</p>
-                    <p class="fw-bolder"><i class="fa-solid fa-phone"></i> 123-123789654</p>
-                </div>
-                <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 fw-bold text-white">Redes</h5>
-                    <p>
-                        <a href="#" class="btn-footer-logo fw-bolder">
-                            <i class="fa-brands fa-facebook"></i> Facebook
-                        </a>
-                    </p>
-                    <p>
-                        <a href="#" class="btn-footer-logo fw-bolder">
-                            <i class="fa-brands fa-instagram"></i> Instagram
-                        </a>
-                    </p>
-                </div>
-            </div>
-        </section>
+      <section class="container text-center text-md-start">
+        <div class="row text-center text-md-start">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 fw-bold text-white">
+              <a class="btn-footer-logo" href="#"
+                ><i class="fa-solid fa-fire-flame-curved"></i> Movie Fire</a
+              >
+            </h5>
+            <p class="fw-bolder">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 fw-bold text-white">Disfruta</h5>
+            <p class="fw-bolder">Estrenos</p>
+            <p class="fw-bolder">Series</p>
+            <p class="fw-bolder">Peliculas</p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 fw-bold text-white">Contactanos</h5>
+            <p class="fw-bolder">
+              <i class="fa-solid fa-location-dot"></i> Calle false 123
+            </p>
+            <p class="fw-bolder">
+              <i class="fa-solid fa-envelope"></i> fire-movies@gmail.com
+            </p>
+            <p class="fw-bolder">
+              <i class="fa-solid fa-phone"></i> 123-123789654
+            </p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 fw-bold text-white">Redes</h5>
+            <p>
+              <a href="#" class="btn-footer-logo fw-bolder">
+                <i class="fa-brands fa-facebook"></i> Facebook
+              </a>
+            </p>
+            <p>
+              <a href="#" class="btn-footer-logo fw-bolder">
+                <i class="fa-brands fa-instagram"></i> Instagram
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
     </footer>
     <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
     <!-- Sweetalert-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -313,5 +399,5 @@
     <script src="../js/utils.js"></script>
     <script src="../js/recursosDeUsuario/logout.js"></script>
     <script src="../js/administracion.js"></script>
-</body>
+  </body>
 </html>

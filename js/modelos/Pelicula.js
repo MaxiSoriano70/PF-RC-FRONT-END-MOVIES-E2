@@ -150,7 +150,7 @@ const dataPeliculas = [
         time: 195, // 3h 15min
         year: 1997,
         image:
-            "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2022/04/titanic-2668025.jpg?tf=3840x",
+            "https://www.laizquierdadiario.com/IMG/logo/titanic.jpg",
         status: true,
         spotLight: false,
     },
@@ -163,7 +163,7 @@ const dataPeliculas = [
         time: 143, // 2h 23min
         year: 2003,
         image:
-            "https://i0.wp.com/www.evosocialmedia.com/wp-content/uploads/2019/10/piratas-del-caribe.jpg?fit=1044%2C588&ssl=1",
+            "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcGDi3CkVVevBR-S3VrvG3KLnvTd9gFZtux9uxRk2HihTfGOjkmSzrXpFaUEoaRga_UnRkhyphenhyphenWgE1-QD5CPhreuedpGPtvd1c9PkSRXiEc63KgScpSnSCesZFHzjdsIiDoenvbzQwOPQ8Q/s1600/Pot_C_DMTNT_Banner_Poster.jpg",
         status: true,
         spotLight: false,
     },
@@ -175,7 +175,7 @@ const dataPeliculas = [
         type: "Película",
         time: 175, // 2h 55min
         year: 1972,
-        image: "https://es.web.img2.acsta.net/pictures/22/02/24/12/05/1849076.jpg",
+        image: "https://americanovictor.com/wp-content/uploads/2023/07/09/sin-categoria/el-padrino-768x432.jpeg",
         status: true,
         spotLight: false,
     },

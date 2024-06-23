@@ -10,30 +10,6 @@
     --color-negro: #000;
 }
 
-.bg-color-principal {
-    background-color: var(--color-principal);
-}
-
-.btn-personalized-1 {
-    background-color: var(--color-principal);
-    color: var(--color-blanco);
-}
-
-.btn-personalized-1:hover {
-    background-color: var(--color-secundario);
-    color: var(--color-blanco);
-}
-
-.btn-personalized-2 {
-    background-color: var(--color-opuesto);
-    color: var(--color-blanco);
-}
-
-.btn-personalized-2:hover {
-    background-color: var(--color-terciario);
-    color: var(--color-blanco);
-}
-
 .img-administracion{
     width: 75px;
     height: 100px;

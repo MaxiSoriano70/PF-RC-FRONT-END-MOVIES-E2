@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./css/nav.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/carousel.css" />
+    <link rel="stylesheet" href="./css/carousel-de-peliculas.css">
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/bootstrap-personalizado.css" />
     <title>Movies Fire</title>
@@ -144,6 +145,44 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
+        </section>
+
+        <section class="carousel-movies">
+            <h2>MOVIES</h2>
+            <article class="carousel-list" id="carousel-list">
+                <button class="carrusel-arrow carrusel-prev" id="button-prev" data-button="button-prev"
+                onclick="app.processingButton(event)">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <div class="carrusel-track" id="track-movie">
+                    <article class="card-movie-carrusel">
+                        <img src="img/img-1.jpg" alt="image" class="card-img-carrusel">
+                        <div class="card-data-movie-carrusel">
+                            <div class="data-head-carrusel">
+                                <div class="ver-ahora-carrusel">
+                                    <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                    <p>Ver Trailer</p>
+                                </div>
+                                <div class="data-more">
+                                    <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                                    <a href="#"><i class="fa-solid fa-circle-info"></i></a>
+                                </div>
+                            </div>
+                            <div class="data-body-carrusel">
+                                <h4>Channeling: A Bridge to the Beyond</h4>
+                                <div class="body-description">
+                                    <p><b>Duración</b>: 115min</p>
+                                    <p><b>Año</b>: 2018</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <button class="carrusel-arrow carrusel-next" id="button-next" data-button="button-next"
+                    onclick="app.processingButton(event)">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </article>
         </section>
 
         <!-- Modal Iniciar Sesión-->
@@ -400,11 +439,13 @@
     <!-- Sweetalert-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Script -->
+    <script src="./js/modelos/Pelicula.js"></script>
     <script src="./js/modelos/Usuario.js"></script>
     <script src="./js/utils.js"></script>
+    <script src="./js/carrusel-pelicula.js"></script>
     <script src="./js/recursosDeUsuario/login.js"></script>
     <script src="./js/recursosDeUsuario/register.js"></script>
     <script src="./js/recursosDeUsuario/logout.js"></script>
-    <script type="module" src="./js/index.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>

@@ -30,22 +30,24 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 const cargarPeliculasDestacadas = () => {
-    const peliculasDestacadas = JSON.parse(localStorage.getItem("peliculas")).filter((pelicula) => pelicula.spotLight);
-    const carouselInner = document.querySelector(".carousel-inner");
-    carouselInner.innerHTML = "";
+  const peliculasDestacadas = JSON.parse(
+    localStorage.getItem("peliculas")
+  ).filter((pelicula) => pelicula.spotLight);
+  const carouselInner = document.querySelector(".carousel-inner");
+  carouselInner.innerHTML = "";
 
-    peliculasDestacadas.forEach((pelicula, index) => {
-      const carouselItem = document.createElement("div");
-      carouselItem.classList.add("carousel-item", "container-img");
-      if (index === 0) {
-        carouselItem.classList.add("active");
-      }
-      const imgElement = document.createElement("img");
-      imgElement.src = pelicula.image;
-      imgElement.classList.add("d-block", "w-100", "movieCarousel");
-      imgElement.alt = pelicula.title;
+  peliculasDestacadas.forEach((pelicula, index) => {
+    const carouselItem = document.createElement("div");
+    carouselItem.classList.add("carousel-item", "container-img");
+    if (index === 0) {
+      carouselItem.classList.add("active");
+    }
+    const imgElement = document.createElement("img");
+    imgElement.src = pelicula.image;
+    imgElement.classList.add("d-block", "w-100", "movieCarousel");
+    imgElement.alt = pelicula.title;
 
-      const textContent = `
+    const textContent = `
           <div class="d-flex align-items-center justify-content-center flex-column text-carrusel">
               <h2 class="titulo-carrusel">${pelicula.title}</h2>
               <a href="#" class="btn btn-p-slider-${
@@ -53,40 +55,53 @@ const cargarPeliculasDestacadas = () => {
               }" aria-label="Ver más"><i class="fa-solid fa-film"></i> Ver más</a>
           </div>
       `;
-      carouselItem.innerHTML = textContent;
-      carouselItem.prepend(imgElement);
+    carouselItem.innerHTML = textContent;
+    carouselItem.prepend(imgElement);
 
-      carouselInner.appendChild(carouselItem);
-    });
-    const carouselControls = document.querySelectorAll(
-      ".carousel-control-prev, .carousel-control-next"
-    );
-    carouselControls.forEach((control) => {
-      control.setAttribute("data-bs-target", "#carouselMovies");
-    });
-}
+    carouselInner.appendChild(carouselItem);
+  });
+  const carouselControls = document.querySelectorAll(
+    ".carousel-control-prev, .carousel-control-next"
+  );
+  carouselControls.forEach((control) => {
+    control.setAttribute("data-bs-target", "#carouselMovies");
+  });
+};
 
 const cargarFiltarPeliculasIndex = () => {
-    const peliculas = JSON.parse(localStorage.getItem('peliculas'));
-    console.log(peliculas);
-    if (peliculas) {
-      const peliculasFiltradas = peliculas.filter(pelicula => pelicula.type == "Película" && pelicula.spotLight == false && pelicula.status == true);
-      console.log(peliculasFiltradas);
-      const cantidadAObtener = 6;
-      const peliculasSeleccionadas = [];
-      while (peliculasSeleccionadas.length < cantidadAObtener && peliculasFiltradas.length > 0) {
-        const indiceAleatorio = Math.floor(Math.random() * peliculasFiltradas.length);
-        peliculasSeleccionadas.push(peliculasFiltradas.splice(indiceAleatorio, 1)[0]);
-      }
-      console.log(peliculasSeleccionadas);
+  const peliculas = JSON.parse(localStorage.getItem("peliculas"));
+  console.log(peliculas);
+  if (peliculas) {
+    const peliculasFiltradas = peliculas.filter(
+      (pelicula) =>
+        pelicula.type == "Película" &&
+        pelicula.spotLight == false &&
+        pelicula.status == true
+    );
+    console.log(peliculasFiltradas);
+    const cantidadAObtener = 6;
+    const peliculasSeleccionadas = [];
+    while (
+      peliculasSeleccionadas.length < cantidadAObtener &&
+      peliculasFiltradas.length > 0
+    ) {
+      const indiceAleatorio = Math.floor(
+        Math.random() * peliculasFiltradas.length
+      );
+      peliculasSeleccionadas.push(
+        peliculasFiltradas.splice(indiceAleatorio, 1)[0]
+      );
+    }
+    console.log(peliculasSeleccionadas);
 
-      const contenedorMoviesSelescionadas = document.querySelector("#track-movie");
-      contenedorMoviesSelescionadas.innerHTML = "";
+    const contenedorMoviesSelescionadas =
+      document.querySelector("#track-movie");
+    contenedorMoviesSelescionadas.innerHTML = "";
 
-      peliculasSeleccionadas.forEach((pelicula, index)=>{
-        const articleMovie = document.createElement('article');
-        articleMovie.classList.add('card-movie-carrusel');
-        articleMovie.innerHTML = `
+    peliculasSeleccionadas.forEach((pelicula, index) => {
+      const articleMovie = document.createElement("article");
+      articleMovie.classList.add("card-movie-carrusel");
+      articleMovie.innerHTML = `
           <img src="${pelicula.image}" alt="${pelicula.title}" class="card-img-carrusel">
           <div class="card-data-movie-carrusel">
               <div class="data-head-carrusel">
@@ -96,24 +111,21 @@ const cargarFiltarPeliculasIndex = () => {
                   </div>
                   <div class="data-more">
                       <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
-                      <a href="#"><i class="fa-solid fa-circle-info"></i></a>
+                      <a href="./pages/detallePelicula.html?id=${pelicula.id}"><i class="fa-solid fa-circle-info"></i></a>
                   </div>
               </div>
               <div class="data-body-carrusel">
                   <h4>${pelicula.title}</h4>
                   <div class="body-description">
-                      <p><b>Duración</b>: ${pelicula.time
-                      }min</p>
-                      <p><b>Año</b>: ${pelicula.year
-                      }</p>
+                      <p><b>Duración</b>: ${pelicula.time}min</p>
+                      <p><b>Año</b>: ${pelicula.year}</p>
                   </div>
               </div>
           </div>
         `;
-        contenedorMoviesSelescionadas.appendChild(articleMovie);
-      });
-
-    } else {
-      console.log('No hay datos de películas en el localStorage.');
-    }
-}
+      contenedorMoviesSelescionadas.appendChild(articleMovie);
+    });
+  } else {
+    console.log("No hay datos de películas en el localStorage.");
+  }
+};

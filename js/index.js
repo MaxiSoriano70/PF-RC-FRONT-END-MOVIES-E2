@@ -75,7 +75,7 @@ const cargarPeliculasDestacadas = () => {
                   data-bs-target="#registrarseModal">
                   Registrate
                 </button>` : ''}
-              <a href="#" class="btn btn-p-slider-${
+              <a href="./pages/detallePelicula.html?id=${pelicula.id}" class="btn btn-p-slider-${
                 index + 1
               }" aria-label="Ver más"><i class="fa-solid fa-film"></i> Ver más</a>
           </div>

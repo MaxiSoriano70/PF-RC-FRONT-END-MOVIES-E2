@@ -79,7 +79,7 @@ const cargarFiltarPeliculasIndex = () => {
         pelicula.status == true
     );
     console.log(peliculasFiltradas);
-    const cantidadAObtener = 6;
+    const cantidadAObtener = 10;
     const peliculasSeleccionadas = [];
     while (
       peliculasSeleccionadas.length < cantidadAObtener &&

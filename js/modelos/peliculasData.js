@@ -188,8 +188,7 @@ const dataPeliculas = [
     type: "Película",
     time: 175, // 2h 55min
     year: 1972,
-    image:
-      "https://es.web.img2.acsta.net/pictures/22/02/24/12/05/1849076.jpg",
+    image: "https://es.web.img2.acsta.net/pictures/22/02/24/12/05/1849076.jpg",
     status: true,
     spotLight: false,
     id: 14,
@@ -206,14 +205,131 @@ const dataPeliculas = [
     status: true,
     id: 15,
     spotLight: true,
-  }
+  },
+  //ARRAY CON PROPIEDADES  NECESITADAS
+
+  {
+    title: "El Caballero Oscuro",
+    category: "Acción",
+    sinopsis:
+      "Cuando el peligro conocido como el Joker emerge de su misterioso pasado, causa estragos y caos en la gente de Gotham.",
+    type: "Película",
+    time: 152,
+    year: 2008,
+    image: "https://example.com/el_caballero_oscuro.jpg",
+    status: false,
+    spotLight: false,
+  },
+  {
+    title: "Stranger Things",
+    category: "Ciencia Ficción",
+    sinopsis:
+      "Cuando un niño desaparece, su madre, un jefe de policía y sus amigos deben enfrentar aterradoras fuerzas sobrenaturales.",
+    type: "Serie",
+    time: 51,
+    year: 2016,
+    image: "https://example.com/stranger_things.jpg",
+    status: false,
+    spotLight: false,
+  },
+  {
+    title: "El Señor de los Anillos: La Comunidad del Anillo",
+    category: "Fantasía",
+    sinopsis:
+      "Un humilde Hobbit de la Comarca y ocho compañeros se embarcan en un viaje para destruir el poderoso Anillo Único.",
+    type: "Película",
+    time: 178,
+    year: 2001,
+    image: "https://example.com/lotr_comunidad.jpg",
+    status: false,
+    spotLight: false,
+  },
+  {
+    title: "Sherlock",
+    category: "Crimen",
+    sinopsis:
+      "Una actualización moderna encuentra al famoso detective y su compañero médico resolviendo crímenes en el Londres del siglo XXI.",
+    type: "Serie",
+    time: 88,
+    year: 2010,
+    image: "https://example.com/sherlock.jpg",
+    status: false,
+    spotLight: false,
+  },
+  {
+    title: "Avatar",
+    category: "Aventura",
+    sinopsis:
+      "Un exmarine parapléjico es enviado a la luna Pandora en una misión única y se debate entre seguir sus órdenes y proteger el mundo.",
+    type: "Película",
+    time: 162,
+    year: 2009,
+    image: "https://example.com/avatar.jpg",
+    status: false,
+    spotLight: false,
+  },
+  {
+    title: "The Witcher",
+    category: "Fantasía",
+    sinopsis:
+      "Geralt de Rivia, un cazador de monstruos mutado, se dirige hacia su destino en un turbulento mundo donde las personas a menudo son más malvadas que las bestias.",
+    type: "Serie",
+    time: 60,
+    year: 2019,
+    image: "https://example.com/witcher.jpg",
+    status: false,
+    spotLight: false,
+  },
+  {
+    title: "Parásitos",
+    category: "Thriller",
+    sinopsis:
+      "La codicia y la discriminación de clases amenazan la nueva relación simbiótica entre la rica familia Park y el pobre clan Kim.",
+    type: "Película",
+    time: 132,
+    year: 2019,
+    image: "https://example.com/parasitos.jpg",
+    status: false,
+    spotLight: false,
+  },
+  {
+    title: "Chernobyl",
+    category: "Drama",
+    sinopsis:
+      "En abril de 1986, una explosión en la planta nuclear de Chernobyl en la Unión Soviética se convierte en una de las peores catástrofes provocadas por el hombre.",
+    type: "Serie",
+    time: 60,
+    year: 2019,
+    image: "https://example.com/chernobyl.jpg",
+    status: false,
+    spotLight: false,
+  },
+  {
+    title: "Spider-Man: Un nuevo universo",
+    category: "Animación",
+    sinopsis:
+      "El adolescente Miles Morales se convierte en Spider-Man de su realidad, cruzando su camino con cinco contrapartes de otras dimensiones.",
+    type: "Película",
+    time: 117,
+    year: 2018,
+    image: "https://example.com/spiderverse.jpg",
+    status: false,
+    spotLight: false,
+  },
+  {
+    title: "The Mandalorian",
+    category: "Ciencia Ficción",
+    sinopsis:
+      "Los viajes de un cazarrecompensas solitario en los confines de la galaxia, lejos de la autoridad de la Nueva República.",
+    type: "Serie",
+    time: 40,
+    year: 2019,
+    image: "https://example.com/mandalorian.jpg",
+    status: false,
+    spotLight: false,
+  },
 ];
-
-
-
 
 export const cargaInicial = () => {
   localStorage.setItem("peliculas", JSON.stringify(dataPeliculas));
 };
-
-

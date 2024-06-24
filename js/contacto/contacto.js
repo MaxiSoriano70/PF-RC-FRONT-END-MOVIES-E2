@@ -2,6 +2,7 @@ const auth = () => {
   const opcionesDeUsuario = document.querySelector("#opciones-usuario");
   const btnAdministracion = document.querySelector("#btnAdministracion");
   const nombreUsuario = document.querySelector("#nombre-usuario");
+  const botonIniciarSesion = document.querySelector("#boton-iniciar-sesion");
 
   const usuario = JSON.parse(sessionStorage.getItem("usuario"));
 
@@ -11,19 +12,18 @@ const auth = () => {
     usuario.admin
       ? (btnAdministracion.style.display = "block")
       : (btnAdministracion.style.display = "none");
+    botonIniciarSesion.style.display = "none";
   } else {
     opcionesDeUsuario.style.display = "none";
     nombreUsuario.textContent = "";
+    botonIniciarSesion.style.display = "block";
   }
 };
 
 auth();
 
-document
-  .getElementById("contactoForm")
-  .addEventListener("submit", function (event) {
+document.getElementById("contactoForm").addEventListener("submit", function (event) {
     event.preventDefault();
-
     const name = event.target.name.value;
     const email = event.target.email.value;
     const subject = event.target.subject.value;
@@ -37,4 +37,4 @@ document
     } else {
       alert("Por favor, complete todos los campos.");
     }
-  });
+});

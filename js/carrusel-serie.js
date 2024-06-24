@@ -1,10 +1,10 @@
-function AppPeliculas() {}
+function AppSeries() {}
 
-AppPeliculas.prototype.processingButton = function (event) {
+AppSeries.prototype.processingButton = function (event) {
     const btn = event.currentTarget;
     const carruselList = event.currentTarget.parentNode;
-    const track = carruselList.querySelector('#track-movie');
-    const carrusel = track.querySelectorAll('.card-movie-carrusel');
+    const track = carruselList.querySelector('#track-serie');
+    const carrusel = track.querySelectorAll('.card-serie-carrusel');
 
     const carruselWidth = carrusel[0].offsetWidth;
     const trackWidth = track.offsetWidth;
@@ -19,13 +19,13 @@ AppPeliculas.prototype.processingButton = function (event) {
     }
 };
 
-AppPeliculas.prototype.prevAction = function (leftPosition, carruselWidth, track) {
+AppSeries.prototype.prevAction = function (leftPosition, carruselWidth, track) {
     if (leftPosition > 0) {
         track.style.left = `${-1 * (leftPosition - carruselWidth)}px`;
     }
 };
 
-AppPeliculas.prototype.nextAction = function (leftPosition, trackWidth, listWidth, carruselWidth, track) {
+AppSeries.prototype.nextAction = function (leftPosition, trackWidth, listWidth, carruselWidth, track) {
     if (leftPosition < (trackWidth - listWidth)) {
         track.style.left = `${-1 * (leftPosition + carruselWidth)}px`;
     }

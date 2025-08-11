@@ -19,7 +19,7 @@ const dataPeliculas = [
     time: 108, // 1h 48min
     year: 2006,
     image:
-      "https://palomaynacho-1f321.kxcdn.com/wp-content/uploads/2023/08/nolan-comedia-mas-grande-will-ferrell-2-jpeg.webp",
+      "https://m.media-amazon.com/images/S/pv-target-images/dd6f0ae61c4a21e60b1ed8bbbe0b3975a19d836efc5b8bd8ebced755b3c21ce0.jpg",
     status: true,
     spotLight: true,
   },
@@ -82,7 +82,7 @@ const dataPeliculas = [
     time: 158, // 2h 38min
     year: 2012,
     image:
-      "https://www.mundodeportivo.com/alfabeta/hero/2021/12/vengadores.1640005155.553.jpg?width=1200&aspect_ratio=16:9",
+      "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2016/07/vengadores.jpg",
     status: true,
     spotLight: false,
   },
@@ -197,7 +197,7 @@ const dataPeliculas = [
     time: 175, // 2h 55min
     year: 1972,
     image:
-      "https://americanovictor.com/wp-content/uploads/2023/07/09/sin-categoria/el-padrino-768x432.jpeg",
+      "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2023/07/padrino-3096022.jpg",
     status: true,
     spotLight: false,
   },
@@ -377,7 +377,7 @@ const dataPeliculas = [
     type: "Película",
     time: 99,
     year: 2014,
-    image: "https://tcomchinaverde.home.blog/wp-content/uploads/2020/04/budapest.jpg",
+    image: "https://cdn.aarp.net/content/dam/aarp/entertainment/movies/2017/07/1140-swinton-fiennes-grand-budapest-hotel-esp.jpg",
     status: true,
     spotLight: false,
   },
@@ -427,7 +427,7 @@ const dataPeliculas = [
     time: 125,
     year: 2001,
     image:
-      "https://i0.wp.com/lascronicasdedeckard.com/wp-content/uploads/2021/05/El-viaje-de-Chihiro-Poster-Las-Cronicas-de-Deckard.jpg?w=835&ssl=1",
+      "https://s3.ppllstatics.com/elcorreo/www/multimedia/202009/17/media/cortadas/studio-ghibli-theme-park-kxTH-U120202875766QjG-1968x1216@RC.jpg",
     status: true,
     spotLight: false,
   },
@@ -438,7 +438,7 @@ const dataPeliculas = [
     type: "Serie",
     time: 5,
     year: 2008,
-    image: "https://thewild.com.ar/wp-content/uploads/2024/02/breaking-bad-banner.jpg",
+    image: "https://hipermediaciones.com/wp-content/uploads/2013/10/21225_breaking_bad.jpg",
     status: true,
     spotLight: false,
   },
@@ -482,7 +482,7 @@ const dataPeliculas = [
     type: "Serie",
     time: 5,
     year: 2017,
-    image: "https://scontent.fsla4-1.fna.fbcdn.net/v/t39.30808-6/240820794_2107817876041006_2034052695943441979_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEZGJFnH1sTfr-KuIHpTHUb3zb42GLf3k7fNvjYYt_eTv9pFfrqEZXnNnBWsEYTsgcqnplY8254VDCK0aSZztlc&_nc_ohc=V9GjgcLsQhgQ7kNvgEnvN7s&_nc_ht=scontent.fsla4-1.fna&oh=00_AYAU8j1Lwd0aQoIcHLf2OJvbZCZQ229-Z6QbIYsjJrKJ6w&oe=667EFD88",
+    image: "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/04/casa-papel-4-1909543.jpg",
     status: true,
     spotLight: false,
   },

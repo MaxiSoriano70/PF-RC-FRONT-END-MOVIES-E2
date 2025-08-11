@@ -24,7 +24,13 @@ Movie Fire es una plataforma web dinámica para la gestión y visualización de 
 - **Gestión de usuarios** con registro, inicio de sesión y edición de perfil.  
 - **Panel de administración** exclusivo para agregar, editar y eliminar contenido.  
 - **Modales dinámicos** que muestran detalles, trailers y contenido popular.  
-- **Diseño responsive** adaptado a dispositivos móviles, tablets y escritorio.  
+- **Diseño responsive** adaptado a dispositivos móviles, tablets y escritorio.
+
+---
+
+## 🌐 Demo en línea
+
+[Ver proyecto en vivo](https://movies-fire.netlify.app/)
 
 ---
 
